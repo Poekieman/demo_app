@@ -1,0 +1,32 @@
+source 'https://rubygems.org'
+
+
+gem 'rails'
+
+group :development do
+	gem 'sqlite3'
+end
+
+# Gems used only for assets and not required
+# in production environments by default.
+group :assets do
+	gem 'sass-rails'
+	gem 'coffee-rails'
+	gem 'uglifier'
+end
+
+gem 'jquery-rails'
+
+# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+gem 'turbolinks'
+
+# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'jbuilder'
+
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'tzinfo-data', platforms: [:mingw, :mswin]
+
+group :production do
+	gem 'pg'
+end
+
