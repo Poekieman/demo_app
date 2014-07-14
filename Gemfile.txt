@@ -3,9 +3,11 @@ source 'https://rubygems.org'
 
 gem 'rails'
 
-group :development do
-	gem 'sqlite3'
-end
+#group :development do
+#	gem 'sqlite3'
+#end
+
+gem 'pg'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -27,6 +29,6 @@ gem 'jbuilder'
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 group :production do
-	gem 'pg'
+	gem 'rails_12factor'
 end
 
